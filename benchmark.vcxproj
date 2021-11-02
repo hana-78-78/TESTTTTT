@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9ED2259A-3325-3534-8184-1B67E81EA246}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>benchmark</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\libfacedetection-master\Build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">benchmark.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">benchmark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\libfacedetection-master\Build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">benchmark.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">benchmark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\libfacedetection-master\Build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">benchmark.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">benchmark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\libfacedetection-master\Build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">benchmark.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">benchmark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mavx2 -mfma /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_ENABLE_AVX2;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_ENABLE_AVX2;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\facedetection.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;E:\opencv\build\x64\vc15\lib\opencv_world453d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/libfacedetection-master/Build/Debug/benchmark.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/libfacedetection-master/Build/Debug/benchmark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mavx2 -mfma /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_ENABLE_AVX2;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_ENABLE_AVX2;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\facedetection.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/libfacedetection-master/Build/Release/benchmark.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/libfacedetection-master/Build/Release/benchmark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mavx2 -mfma /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_ENABLE_AVX2;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_ENABLE_AVX2;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\facedetection.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/libfacedetection-master/Build/MinSizeRel/benchmark.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/libfacedetection-master/Build/MinSizeRel/benchmark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mavx2 -mfma /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_ENABLE_AVX2;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_ENABLE_AVX2;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\libfacedetection-master\src;E:\libfacedetection-master\facedetection;E:\libfacedetection-master\Build;E:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\facedetection.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;E:\opencv\build\x64\vc15\lib\opencv_world453.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/libfacedetection-master/Build/RelWithDebInfo/benchmark.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/libfacedetection-master/Build/RelWithDebInfo/benchmark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\libfacedetection-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/libfacedetection-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\learnopencv-master\FaceDetectionComparison\install\bin\cmake.exe -SE:/libfacedetection-master -BE:/libfacedetection-master/Build --check-stamp-file E:/libfacedetection-master/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindOpenMP.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GenerateExportHeader.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\exportheader.cmake.in;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeSystem.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\libfacedetection-master\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/libfacedetection-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\learnopencv-master\FaceDetectionComparison\install\bin\cmake.exe -SE:/libfacedetection-master -BE:/libfacedetection-master/Build --check-stamp-file E:/libfacedetection-master/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindOpenMP.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GenerateExportHeader.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\exportheader.cmake.in;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeSystem.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\libfacedetection-master\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/libfacedetection-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\learnopencv-master\FaceDetectionComparison\install\bin\cmake.exe -SE:/libfacedetection-master -BE:/libfacedetection-master/Build --check-stamp-file E:/libfacedetection-master/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindOpenMP.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GenerateExportHeader.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\exportheader.cmake.in;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeSystem.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\libfacedetection-master\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/libfacedetection-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\learnopencv-master\FaceDetectionComparison\install\bin\cmake.exe -SE:/libfacedetection-master -BE:/libfacedetection-master/Build --check-stamp-file E:/libfacedetection-master/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeRCInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindOpenMP.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\FindPackageMessage.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GNUInstallDirs.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\GenerateExportHeader.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\Windows.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\learnopencv-master\FaceDetectionComparison\install\share\cmake-3.21\Modules\exportheader.cmake.in;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeCXXCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeRCCompiler.cmake;E:\libfacedetection-master\Build\CMakeFiles\3.21.3\CMakeSystem.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;E:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\libfacedetection-master\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\libfacedetection-master\example\benchmark.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\libfacedetection-master\Build\ZERO_CHECK.vcxproj">
+      <Project>{EF26EEBF-0E78-3B5C-A115-963A81C47EEB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\libfacedetection-master\Build\facedetection.vcxproj">
+      <Project>{70A4804E-5E95-3554-AB56-53F3F2B86BB9}</Project>
+      <Name>facedetection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,6 @@
+E:/libfacedetection-master/Build/install/lib/facedetection.lib
+E:/libfacedetection-master/Build/install/include/facedetection/facedetectcnn.h
+E:/libfacedetection-master/Build/install/include/facedetection/facedetection_export.h
+E:/libfacedetection-master/Build/install/lib/cmake/facedetection/facedetectionConfig.cmake
+E:/libfacedetection-master/Build/install/lib/cmake/facedetection/facedetectionConfig-release.cmake
+E:/libfacedetection-master/Build/install/lib/cmake/facedetection/facedetectionConfigVersion.cmake

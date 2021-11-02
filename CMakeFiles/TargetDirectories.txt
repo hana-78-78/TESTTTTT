@@ -1,0 +1,7 @@
+E:/libfacedetection-master/Build/CMakeFiles/facedetection.dir
+E:/libfacedetection-master/Build/CMakeFiles/detect-image-demo.dir
+E:/libfacedetection-master/Build/CMakeFiles/detect-camera-demo.dir
+E:/libfacedetection-master/Build/CMakeFiles/benchmark.dir
+E:/libfacedetection-master/Build/CMakeFiles/INSTALL.dir
+E:/libfacedetection-master/Build/CMakeFiles/ALL_BUILD.dir
+E:/libfacedetection-master/Build/CMakeFiles/ZERO_CHECK.dir
